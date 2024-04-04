@@ -1,11 +1,11 @@
 // Declare an array of image filenames
-const imageFiles = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const filenames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
 // Loop through the images and append thumbnails to the thumb-bar
 const thumbBar = document.querySelector('.thumb-bar');
-for (let i = 0; i < imageFiles.length; i++) {
+for (let i = 0; i < filenames.length; i++) {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', 'images/' + imageFiles[i]);
+  newImage.setAttribute('src', 'images/' + filenames[i]);
   newImage.setAttribute('alt', 'Image ' + (i + 1));
   thumbBar.appendChild(newImage);
 
@@ -32,4 +32,3 @@ btn.addEventListener('click', function() {
     overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
   }
 });
-
