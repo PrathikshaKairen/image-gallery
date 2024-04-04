@@ -18,7 +18,7 @@ for (let i = 0; i < imageFiles.length; i++) {
 }
 
 // Write a handler for the darken/lighten button
-const btn = document.querySelector('.dark');
+const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 btn.addEventListener('click', function() {
@@ -32,3 +32,4 @@ btn.addEventListener('click', function() {
     overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
   }
 });
+
